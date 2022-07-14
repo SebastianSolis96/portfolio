@@ -1,0 +1,424 @@
+body .about-screen {
+    /* background: linear-gradient(104.99deg, rgba(21, 138, 246, 0.3) 0%, rgba(80, 98, 216, 0) 38.56%, rgba(89, 91, 211, 0) 48.38%, rgba(101, 83, 205, 0) 59.96%, rgba(186, 26, 160, 0.25) 100%); */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    justify-content: flex-start;
+    /* width: 100vw; */
+
+    color: #fff;
+    /* height: 86%; */
+    height: 86%;
+    min-height: 50px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.left-container, .right-container {
+    display: flex;
+    flex-direction: column;
+    /* height: 50%; */
+}
+
+.left-container { 
+    align-items: center;
+    justify-content: center;
+    /* width: 40%;  */
+    width: 100%;
+}
+
+.right-container { 
+    /* justify-content: Scenter; */
+    /* padding-right: 5rem; */
+    margin-top: 1rem;
+    padding: 0 1.3rem;
+    /* width: 60%;  */
+    width: 100%;
+}
+
+.about-img {
+    /* height: 350px;
+    width: 350px; */
+    height: 220px;
+    width: 220px;
+}
+
+.cv-button {
+    /* height: 5rem; */
+    height: 4rem;
+    padding: 1rem;
+    /* margin: 2rem 0; */
+    margin: 1rem 0;
+    /* width: 17rem; */
+    width: 13rem;
+    color: #fff;
+    background: none;
+    border: 5px solid #3BA9C3;
+    border-radius: 1rem;
+    /* font-size: 1.5rem; */
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cv-button:hover {
+    background: #2b7c8f;
+    border: none;
+    cursor: pointer;
+}
+
+.right-container h1 {
+    font-size: 1.5rem;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.right-container .hr-title {
+    background: linear-gradient(90deg, #3BA9C3 0%, rgba(135, 112, 200, 0.694055) 73.16%, rgba(241, 32, 207, 0.15) 100%);
+    border-radius: 5rem;
+    height: 11px;
+    /* height: 4px; */
+    /* margin: .3rem 0 1.7rem 0; */
+    margin: .3rem 0 1.2rem 0;
+    /* min-height: .7rem; */
+    min-height: .6rem;
+    /* width: 9rem; */
+    width: 7rem;
+}
+
+.right-container p {
+    height: auto;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+    /* margin-bottom: 1.7rem; */
+    margin-bottom: .5rem;
+    width: 100%;
+    text-align: justify;
+}
+
+/* @media only screen and (min-width: 600px) { */
+@media only screen and (min-width: 551px) {
+    /* body .about-screen {
+        flex-direction: row;
+    } */
+    
+    body .about-screen { 
+        margin-bottom: 1rem; 
+        overflow-y: hidden; 
+    }
+
+    .about-img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .right-container { padding: 0 2rem; }
+
+    .right-container h1 { font-size: 1.8rem; }
+
+    .right-container .hr-title { 
+        margin-bottom: 2rem;
+        width: 8rem; 
+    }
+
+    .right-container p { 
+        font-size: 22px; 
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    body .about-screen { 
+        align-items: center; 
+        flex-direction: row; 
+        justify-content: center; 
+        margin-bottom: 0;
+    }
+
+    .left-container {
+        height: 100%;
+        width: 35%;
+    }
+
+    .right-container {
+        height: 100%;
+        width: 65%;
+        margin-top: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .about-img {
+        height: 260px;
+        width: 250px;
+    }
+
+    .cv-button { margin: 1.7rem 0; }
+
+    .right-container h1 { font-size: 1.5rem; }
+
+    .right-container .hr-title { 
+        margin-bottom: 1.5rem;
+        width: 6.7rem; 
+    }
+
+    .right-container p { 
+        font-size: 20px; 
+        margin-bottom: 1.5rem;
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .about-img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .cv-button {
+        height: 5.5rem;
+        margin: 2rem 0;
+        width: 18rem;
+        font-size: 1.5rem;
+    }
+
+    .right-container h1 { font-size: 2rem; }
+
+    .right-container .hr-title { 
+        margin-bottom: 2rem;
+        width: 9rem; 
+    }
+
+    .right-container p { 
+        font-size: 21px; 
+        margin-bottom: 1.7rem;
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+    .left-container { width: 30%; }
+
+    .right-container { width: 70%; }
+
+    .right-container p { 
+        font-size: 23px; 
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-height: 790px) and (min-width: 900px) and (max-width: 1200px) {
+    .right-container h1 { font-size: 1.5rem; }
+
+    .right-container .hr-title { 
+        margin-bottom: 1rem;
+        width: 7rem; 
+    }
+    
+    .right-container p{
+        font-size: 17px;
+        margin-bottom: .3rem;
+    }
+}
+
+@media only screen and (max-height: 650px) and (min-width: 900px) and (max-width: 1200px) {    
+    .right-container h1 { font-size: 1.3rem; }
+
+    .right-container .hr-title { width: 6rem; }
+    
+    .right-container p{
+        line-height: 25px;
+        font-size: 15px;
+        margin-bottom: .7rem;
+    }
+}
+
+@media only screen and (max-height: 540px) and (min-width: 900px) and (max-width: 1200px) {  
+    .right-container h1 { font-size: 1.1rem; }
+
+    .right-container .hr-title { 
+        /* margin-bottom: 1rem; */
+        /* height: 8px; */
+        min-height: 7px;
+        width: 5rem; 
+    }
+    
+    .right-container p{
+        /* line-height: 25px; */
+        font-size: 13px;
+        /* margin-bottom: .7rem; */
+    }
+}
+
+@media only screen and (max-height: 410px) and (min-width: 900px) and (max-width: 1200px) {
+    .about-img {
+        height: 210px;
+        width: 210px;
+    }
+
+    .cv-button {
+        height: 3.5rem;
+        border-radius: .5rem;
+        padding: .7rem;
+        margin: .5rem 0;
+        width: 11rem;
+        font-size: 1rem;
+    }
+
+    .right-container h1 { font-size: 1rem; }
+
+    .right-container .hr-title { 
+        margin: .1rem 0 .5rem 0;
+        /* height: 8px; */
+        min-height: 6px;
+        width: 4.6rem; 
+    }
+    
+    .right-container p{
+        line-height: 20px;
+        font-size: 11px;
+        /* margin-bottom: .7rem; */
+    }
+}
+
+@media only screen and (max-height: 710px) and (min-width: 1201px) {
+    .right-container h1 { font-size: 1.5rem; }
+
+    .right-container .hr-title { 
+        margin-bottom: 1rem;
+        width: 7rem; 
+    }
+    
+    .right-container p{
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media only screen and (max-height: 580px) and (min-width: 1201px) {
+    .about-img {
+        height: 270px;
+        width: 270px;
+    }
+
+    .cv-button {
+        height: 4rem;
+        /* border-radius: .5rem; */
+        /* padding: .7rem; */
+        margin: 1rem 0;
+        width: 15rem;
+        font-size: 1.3rem;
+    }
+
+    /* .right-container h1 { font-size: 1.3rem; } */
+
+    /* .right-container .hr-title { width: 6rem; } */
+    
+    .right-container p{
+        line-height: 25px;
+        font-size: 17px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-height: 440px) and (min-width: 1201px) {
+    .about-img {
+        height: 215px;
+        width: 215px;
+    }
+
+    .cv-button {
+        height: 3.5rem;
+        border-radius: .5rem;
+        /* padding: .7rem; */
+        margin: 1rem 0;
+        width: 12rem;
+        font-size: 1.1rem;
+    }
+
+    .right-container h1 { font-size: 1.2rem; }
+
+    .right-container .hr-title { 
+        height: 7px;
+        margin-bottom: .5rem;
+        min-height: 7px;
+        width: 5.7rem; 
+    }
+    
+    .right-container p {
+        /* line-height: 25px; */
+        font-size: 14px;
+        margin-bottom: .6rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* @media only screen and (max-width: 1200px) {
+    .right-container {
+        padding-right: 3rem;
+    }
+
+}
+
+@media only screen and (max-height: 720px) {
+
+    .right-container p{
+        font-size: 17.5px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-height: 570px) {
+    
+    .about-img {
+        height: 270px;
+        width: 270px;
+    }
+
+    .cv-button {
+        font-size: 1.3rem;
+        height: 4.5rem;
+        margin: 1.5rem 0;
+        width: 15rem;
+    }
+
+    .right-container p{
+        font-size: 15px;
+        margin-bottom: 1.3rem;
+    }
+}
+
+@media only screen and (max-height: 430px) {
+    .about-screen { 
+        margin-bottom: .7rem;
+        overflow-y: scroll; 
+        min-height: 200px;
+    }
+
+    .right-container, .left-container { justify-content: flex-start; }
+
+    .about-img {
+        height: 230px;
+        width: 230px;
+    }
+
+    .right-container p{
+        font-size: 15px;
+        margin-bottom: .5rem;
+    }
+} */

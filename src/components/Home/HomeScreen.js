@@ -1,6 +1,5 @@
 import moment from 'moment';
-
-import { Navbar } from '../ui/navbar/Navbar';
+import {motion} from 'framer-motion/dist/es/index';
 
 import './Home.css';
 
@@ -8,27 +7,44 @@ const year = moment().format('YYYY');
 
 export const HomeScreen = () => {
     return (
-        // <div>
-        
+        <div className="container-home">
             <div className="home-screen">
-
-                {/* <div className="navbar-home">
-                    <Navbar />
-                </div> */}
-                <div className="home-glass">
-                    {/* <div className="container-home"> */}
-                        <div className="focus-picture">
-                            <div className="card-glass">
+                {/* <div className="home-glass"> */}
+                    <div className="first-column">
+                        <motion.div
+                            className="card-glass"
+                            initial={{ scale: 0.5 }}
+                            animate={{ scale: 1 }}
+                            transition={{ type: "spring", stiffness: 100 }}
+                        >
+                            {/* <div className="card-glass"> */}
                                 <p>
                                     <span className="p-2">¡HOLA! 👋 SOY</span><br />
                                     <span className="p-3">SEBASTIAN</span><br />
                                     <span className="p-1">FRONTEND DEVELOPER</span><br />
                                 </p>
-                            </div>
+                            {/* </div> */}
+                        </motion.div>
+                    </div>
 
-                            {/* <img src="/assets/profile.png" className="profile-picture" alt="Sebastian Solis" /> */}
+                    <div className="second-column">
+                        <motion.div
+                            className="second-column-animated"
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{ type: "spring", stiffness: 100 }}
+                        >
                             <img src="/assets/profile_final1.png"  alt="Sebastian Solis" />
+                        </motion.div>
+                    </div>
 
+                    <div className="third-column">
+                        <motion.div
+                        className="third-column-animated"
+                            initial={{ scale: 0.59 }}
+                            animate={{ scale: 1 }}
+                            transition={{ type: "spring", stiffness: 100 }}
+                        >
                             <div className="twitter-card">
                                 <a href="https://twitter.com/sebascript_" target="_blank" rel="noreferrer">
                                     <div className="card-container">
@@ -64,20 +80,25 @@ export const HomeScreen = () => {
                                     </div>
                                 </a>
                             </div>
+                        </motion.div>
+                    </div>
 
-                        </div>
-
-                        <div className="card-glass-copy">
-                            <p>@{ year } | Todos los derechos reservados  
-                                <a className="decoration-link pl-1" href="https://twitter.com/sebascript_" target="_blank" rel="noreferrer">
-                                    @sebascript_
-                                </a>
-                            </p>
-                        </div>
-                    {/* </div> */}
-                </div>
-                <Navbar />
+                    {/* <div className="card-glass-copy">
+                        <p>@{ year } | Todos los derechos reservados  
+                            <a className="decoration-link pl-1" href="https://twitter.com/sebascript_" target="_blank" rel="noreferrer">
+                                @sebascript_
+                            </a>
+                        </p>
+                    </div> */}
+                {/* </div> */}
             </div>
-        // </div>
+            <div className="card-glass-copy">
+                <p>@{ year } | Todos los derechos reservados  
+                    <a className="decoration-link pl-1" href="https://twitter.com/sebascript_" target="_blank" rel="noreferrer">
+                        @sebascript_
+                    </a>
+                </p>
+            </div>
+        </div>
     )
 }

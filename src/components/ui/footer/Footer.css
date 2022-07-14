@@ -1,10 +1,10 @@
 .container-logo {
   display: flex;
   justify-content: center;
+  margin-bottom: -8.5rem;
   padding: 0 1rem;
   position: relative;
   width: 100%;
-  margin-bottom: -8.5rem;
 }
 
 .react-logo {
@@ -31,9 +31,7 @@ footer {
   width: 100vw;
 }
 
-.text-middle {
-  font-size: 1.7em;
-}
+.text-middle { font-size: 1.7em; }
 
 footer .social-icon, 
 footer .menu {
@@ -46,9 +44,7 @@ footer .menu {
 }
 
 footer .social-icon li,
-footer .menu li {
-  list-style: none;
-}
+footer .menu li { list-style: none; }
 
 footer .social-icon li a,
 footer .menu li a {
@@ -59,9 +55,7 @@ footer .menu li a {
   transition: 0.5s;
 }
 
-footer .social-icon li a:hover {
-  transform: translateY(-1rem);
-}
+footer .social-icon li a:hover { transform: translateY(-1rem); }
 
 footer .menu li a {
   color: #fff;
@@ -72,31 +66,25 @@ footer .menu li a {
   text-decoration: none;
 }
 
-footer .menu li a:hover {
-  opacity: 1;
-}
+footer .menu li a:hover { opacity: 1; }
 
 footer p {
   color: #fff;
-  text-align: center;
-  margin-top: 1.2rem;
-  margin-bottom: 1rem;
   font-size: 1.1em;
+  margin-bottom: 1rem;
+  margin-top: 1.2rem;
+  text-align: center;
 }
 
 .decoration-link {
   color: #fff;
-  text-decoration: none;
   opacity: 0.75;
+  text-decoration: none;
 }
 
-.decoration-link:hover {
-  opacity: 1;
-}
+.decoration-link:hover { opacity: 1; }
 
-.pl-1 {
-  padding-left: .5rem;
-}
+.pl-1 { padding-left: .5rem; }
 
 footer .wave {
   background: url(/src/backgrounds/wave.png);
@@ -137,44 +125,29 @@ footer .wave#wave4 {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .react-logo {
-    animation: react-logo-spin infinite 20s linear;
-  }
+  .react-logo { animation: react-logo-spin infinite 20s linear; }
 }
 
 @keyframes animateWave {
-  0% {
-    background-position-x: 1000px;
-  }
-  100% {
-    background-position-x: 0px;
-  }
+  0% { background-position-x: 1000px; }
+
+  100% { background-position-x: 0px; }
 }
 
 @keyframes animateWave2 {
-  0% {
-    background-position-x: 0px;
-  }
-  100% {
-    background-position-x: 1000px;
-  }
+  0% { background-position-x: 0px; }
+
+  100% { background-position-x: 1000px; }
 }
 
 @keyframes react-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+
+  to { transform: rotate(360deg); }
 }
 
 @media only screen and (max-width: 450px) {
-  .react-logo {
-    max-width: 15rem;
-  }
+  .react-logo { max-width: 15rem; }
   
-  .canoe {
-    max-width: 15rem;
-  }
+  .canoe { max-width: 15rem; }
 }
