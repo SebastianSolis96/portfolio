@@ -2,6 +2,7 @@ import { useContext, useMemo } from 'react';
 
 import { ProjectsContext } from '../../context/ProjectsContext';
 import { getProjectsByParam } from '../../helpers/getProjectsByParam';
+import { ProjectModal } from './ProjectModal';
 
 import './Projects.css';
 import { ProjectsCard } from './ProjectsCard';
@@ -29,6 +30,8 @@ export const ProjectsScreen = () => {
                     )
                 }
             </div>
+
+            <ProjectModal />
         </div>
     )
 }

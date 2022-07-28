@@ -142,54 +142,71 @@ export const projects = [
         ],
         'info': 'Esta es la info del proyecto donde describiré todo lo que sea necesario.',
     },
-    // {
-    //     'id': 7,
-    //     'title': 'REACT',
-    //     'url': '/assets/react.svg'
-    // },
-    // {
-    //     'id': 8,
-    //     'title': 'REDUX',
-    //     'url': '/assets/redux.svg'
-    // },
-    // {
-    //     'id': 9,
-    //     'title': 'ANDROID APPS',
-    //     'url': '/assets/android.svg'
-    // },
-    // {
-    //     'id': 10,
-    //     'title': 'GIT',
-    //     'url': '/assets/git.svg'
-    // },
-    // {
-    //     'id': 11,
-    //     'title': 'POSTGRESQL',
-    //     'url': '/assets/postgresql.svg'
-    // },
-    // {
-    //     'id': 12,
-    //     'title': 'MYSQL',
-    //     'url': '/assets/mysql.svg'
-    // },
-    // {
-    //     'id': 13,
-    //     'title': 'SQL SERVER',
-    //     'url': '/assets/sql.svg'
-    // },
-    // {
-    //     'id': 14,
-    //     'title': 'NODEJS',
-    //     'url': '/assets/nodejs.svg'
-    // },
-    // {
-    //     'id': 15,
-    //     'title': 'EXPRESS',
-    //     'url': '/assets/express.svg'
-    // },
-    // {
-    //     'id': 16,
-    //     'title': 'UI/UX',
-    //     'url': '/assets/ui.svg'
-    // }
+    {
+        'id': 7,
+        'title': 'FORM VALIDATOR',
+        'url': '/assets/form_validator_1.svg',
+        'tag_project': 'ui',
+        'buttons': [
+            'more', 
+            'github',
+            'demo'
+        ],
+        'link_github': 'https://github.com/SebastianSolis96/form-validator',
+        'link_demo': 'https://sebastiansolisporfolio.on.drv.tw/Form%20Validator/',
+        'imgs_carousel': [ 
+            '/assets/form_validator_1.svg'
+        ],
+        'language': [ 
+            'HTML', 
+            'CSS',
+            'JAVASCRIPT',
+            'REGULAR EXPRESSIONS' 
+        ],
+        'info': 'Esta es la info del proyecto donde describiré todo lo que sea necesario.',
+    },
+    {
+        'id': 8,
+        'title': 'DIGITAL CLOCK',
+        'url': '/assets/digital_clock_1.svg',
+        'tag_project': 'html',
+        'buttons': [
+            'more',
+            'github', 
+            'demo'
+        ],
+        'link_github': 'https://github.com/SebastianSolis96/digital-clock',
+        'link_demo': 'https://sebastiansolisporfolio.on.drv.tw/Digital%20Clock/',
+        'imgs_carousel': [ 
+            '/assets/digital_clock_1.svg'
+        ],
+        'language': [ 
+            'HTML', 
+            'CSS',
+            'JAVASCRIPT' 
+        ],
+        'info': 'Esta es la info del proyecto donde describiré todo lo que sea necesario.',
+    },
+    {
+        'id': 9,
+        'title': 'TODO APP',
+        'url': '/assets/todo_app_1.svg',
+        'tag_project': 'html',
+        'buttons': [
+            'more',
+            'github', 
+            'demo'
+        ],
+        'link_github': 'https://github.com/SebastianSolis96/todo-app',
+        'link_demo': 'https://sebastiansolisporfolio.on.drv.tw/To%20Do/',
+        'imgs_carousel': [ 
+            '/assets/todo_app_1.svg'
+        ],
+        'language': [ 
+            'HTML', 
+            'CSS',
+            'JAVASCRIPT' 
+        ],
+        'info': 'Esta es la info del proyecto donde describiré todo lo que sea necesario.',
+    },
 ]
