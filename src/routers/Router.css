@@ -1,19 +1,17 @@
 .container-routes {
+    background: linear-gradient(104.99deg, rgba(21, 138, 246, 0.3) 0%, rgba(80, 98, 216, 0) 38.56%, rgba(89, 91, 211, 0) 48.38%, rgba(101, 83, 205, 0) 59.96%, rgba(186, 26, 160, 0.25) 100%);
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-
-    background: linear-gradient(104.99deg, rgba(21, 138, 246, 0.3) 0%, rgba(80, 98, 216, 0) 38.56%, rgba(89, 91, 211, 0) 48.38%, rgba(101, 83, 205, 0) 59.96%, rgba(186, 26, 160, 0.25) 100%);
 }
 
 .container-routes-glass {
+    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-
-    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 @media only screen and (max-width: 550px) {

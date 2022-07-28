@@ -1,0 +1,74 @@
+body .skills-screen {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 86%;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0 3rem;
+    width: 100%;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 800px;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.skill {
+    align-items: center;
+    display: flex;
+    flex: 1 0 21%;
+    flex-direction: column;
+    height: 135px;
+    justify-content: center;
+    margin: .5rem;
+    min-width: 100px;
+    width: 154px;
+}
+
+.circle-skill {
+    align-items: center;
+    background: linear-gradient(180deg, rgba(126, 126, 126, 0.4) 0%, rgba(71, 71, 71, 0) 148%);
+    border: 1px solid rgba(129, 129, 129, 0.04);
+    border-radius: 10rem;
+    box-sizing: border-box;
+    display: flex;
+    filter: drop-shadow(0px 4px 4px rgba(19, 19, 19, 0.25));
+    height: 80px;
+    justify-content: center;
+    min-height: 80px;
+    min-width: 80px;
+    width: 80px;
+}
+
+.icon-skill {
+    height: 45px;
+    width: 45px;
+}
+
+.title-skill {
+    font-size: 1.1rem;
+    font-weight: 700;
+    height: auto;
+    margin-top: .5rem;
+    text-align: center;
+    width: 128px;
+}
+
+@media only screen and (min-width: 551px) {
+    .title-skill { font-size: 1.2rem; }
+}
+
+@media only screen and (min-width: 900px) {
+    .title-skill { font-size: 1.3rem; }
+}
+
+@media only screen and (max-height: 770px) and (min-width: 551px) {
+    .skills-screen { margin-bottom: 1rem; }
+}

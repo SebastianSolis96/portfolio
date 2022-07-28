@@ -1,24 +1,36 @@
 import React from 'react';
-import { getAge } from '../../helpers/getAge';
+import {motion} from 'framer-motion/dist/es/index';
 
+import { getAge } from '../../helpers/getAge';
 import './About.css';
 
 export const AboutScreen = () => {
     return (
         <div className="about-screen">
-            <div className="left-container">
+            <motion.div
+                className="left-container"
+                initial={{ x: -1000 }}
+                animate={{ x: 1 }}
+                transition={{ type: "tween", duration: 1.2 }}
+            >
                 <img className="about-img" src="/assets/about_me.png" alt="Sebastian Solis" />
                 
-                <a className="cv-button" href="https:\google.com"  target="_blank" rel="noreferrer">
+                <a className="cv-button" href="/assets/CV-SEBASTIAN SOLIS.pdf"  target="_blank" rel="noreferrer">
                     DESCARGAR CV
                 </a>
-                {/* <button className="cv-button">
-                    DESCARGAR CV
-                </button> */}
-            </div>
+            </motion.div>
 
-            <div className="right-container">
-                <h1>Sobre mi</h1>
+            <motion.div
+                className="right-container"
+                initial={{ x: 1000 }}
+                animate={{ x: 1 }}
+                transition={{ type: "tween", duration: 0.8 }}
+            >
+                <h1>Sobre mi 
+                    <a href="https://github.com/SebastianSolis96" alt="github Sebastian Solis" target="_blank" rel="noreferrer">
+                        <img src="/assets/github.svg" className="github-logo" alt="@sebascript_" />
+                    </a>
+                </h1>
                 <div className="hr-title"></div>
                 <p>
                     Soy Sebastian Solis, tengo {getAge()} años y actualmente resido en Quito, Ecuador.
@@ -41,7 +53,7 @@ export const AboutScreen = () => {
                     cambios y trabajar en equipo, siempre estoy presto a ayudar ya que tengo presente que enseñar 
                     es la mejor forma de aprender.
                 </p>
-            </div>
+            </motion.div>
         </div>
     )
 }

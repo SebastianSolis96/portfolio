@@ -16,6 +16,7 @@ export const AppRouter = () => {
             <div className="container-routes-glass">
                 <BrowserRouter>
                     <Navbar />
+                    
                     <Routes>
                         <Route path="/" element={<HomeScreen />} />
 

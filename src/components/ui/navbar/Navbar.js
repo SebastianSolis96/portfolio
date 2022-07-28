@@ -28,7 +28,6 @@ export const Navbar = () => {
                             <div className='menu-icon' alt='ícono de inicio'>
                                 <div className="icon-home"></div>
                             </div>
-                            {/* <img src="/assets/home.png" className="menu-icon" alt="inicio" /> */}
                         </NavLink>
                     </li>
                     
@@ -50,12 +49,6 @@ export const Navbar = () => {
                                 <div className="icon-me"></div>
                             </div>
                         </NavLink>
-                        {/* <NavLink
-                            className={ ({ isActive }) => '' + (isActive ? 'active-phone' : '')}
-                            to="/sobre-mi"
-                        >
-                            <img src="/assets/me.png" className="menu-icon" alt="sobre mi" />
-                        </NavLink> */}
                     </li>
                     
                     <li className="hidden-item">
@@ -76,12 +69,6 @@ export const Navbar = () => {
                                 <div className="icon-skills"></div>
                             </div>
                         </NavLink>
-                        {/* <NavLink
-                            className={ ({ isActive }) => '' + (isActive ? 'active-phone' : '')}
-                            to="/skills"
-                        >
-                            <img src="/assets/skills.png" className="menu-icon" alt="habilidades" />
-                        </NavLink> */}
                     </li>
                     
                     <li className="hidden-item">
@@ -102,12 +89,6 @@ export const Navbar = () => {
                                 <div className="icon-projects"></div>
                             </div>
                         </NavLink>
-                        {/* <NavLink
-                            className={ ({ isActive }) => '' + (isActive ? 'active-phone' : '')}
-                            to="/proyectos"
-                        >
-                            <img src="/assets/projects.png" className="menu-icon" alt="proyectos" />
-                        </NavLink> */}
                     </li>
 
                     <li className="hidden-item">
@@ -128,12 +109,6 @@ export const Navbar = () => {
                                 <div className="icon-contact"></div>
                             </div>
                         </NavLink>
-                        {/* <NavLink
-                            className={ ({ isActive }) => '' + (isActive ? 'active-phone' : '')}
-                            to="/contacto"
-                        >
-                            <img src="/assets/contact.png" className="menu-icon" alt="contacto" />
-                        </NavLink> */}
                     </li>
                     
                 </ul>

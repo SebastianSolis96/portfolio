@@ -5,44 +5,24 @@
 }
 
 .home-screen {
-    /* background: linear-gradient(104.99deg, rgba(21, 138, 246, 0.3) 0%, rgba(80, 98, 216, 0) 38.56%, rgba(89, 91, 211, 0) 48.38%, rgba(101, 83, 205, 0) 59.96%, rgba(186, 26, 160, 0.25) 100%); */
-    /* height: 86%; */
-    height: 100%;
-    /* height: 100vh; */
-    width: 100vw;
-    /* height: 100vh;
-    width: 100vw; */
-    z-index: 0;
-
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-}
-
-/* .home-glass{ */
-    /* align-items: center; */
-    /* background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%); */
-    /* backdrop-filter: blur(42px);
     display: flex;
     flex-direction: row;
-    height: 100vh; */
-    /* height: 100%; */
-    /* justify-content: center;
-    width: 100vw; */
-    /* width: 100%; */
-/* } */
+    height: 100%;
+    justify-content: center;
+    width: 100vw;
+    z-index: 0;
+}
 
 .first-column, .second-column, .third-column {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
     height: 100%;
-    width: 100%;
-    overflow-y: hidden;
+    justify-content: center;
     overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
 }
 
 .first-column { align-items: flex-end; }
@@ -61,17 +41,12 @@
     background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
     backdrop-filter: blur(42px);
     border-radius: 1.5rem;
+    display: inline-block;
+    height: auto;
     line-height: 1.9rem;
     margin-bottom: 5rem;
     padding: 1rem;
-    /* height: 25%; */
-    /* width: 19rem; */
-    height: auto;
     width: auto;
-
-    display: inline-block
-
-    /* box-sizing: content-box; */
 }
 
 .card-glass p {
@@ -175,33 +150,20 @@
 }
 
 .card-glass-copy {
-    /* bottom: 0; */
     color: #fff;
     font-size: 1.3em;
-    /* padding: 0 0 4rem 0; */
-    padding-right: 2rem;
-    /* poxsition: absolute; */
-    margin-right: 2rem;
-    text-align: right;
-    -webkit-text-stroke: .3px black;
-    width: 100%;
     height: 5rem;
+    margin-right: 2rem;
+    padding-right: 2rem;
+    text-align: right;
+    width: 100%;
+    -webkit-text-stroke: .3px black;
 } 
 
 .card-glass-copy p{
     height: 100%;
     width: auto;
 }
-/* .card-glass-copy {
-    bottom: 0;
-    color: #fff;
-    font-size: 1.3em;
-    padding: 0 0 4rem 0;
-    position: absolute;
-    right: 2em;
-    text-align: right;
-    -webkit-text-stroke: .3px black;
-}  */
 
 .decoration-link {
     color: #fff;
@@ -215,11 +177,6 @@
 .pl-1 { padding-left: .5rem; }
 
 @media only screen and (max-width: 890px) {
-    /* .card-glass-copy p{
-        margin: 0 5em -2.5em 0;
-        width: 100%;
-    } */
-
     .card-glass p .p-1 { font-size: .85rem; }
     
     .card-glass p .p-2 { font-size: 1.2rem; }
@@ -237,14 +194,6 @@
     .whatsapp-card p .p-2 { font-size: 1em; }
 }
 
-/* @media only screen and (max-width: 840px) {
-    .card-glass p .p-1 { font-size: .85rem; }
-    
-    .card-glass p .p-2 { font-size: 1.2rem; }
-    
-    .card-glass p .p-3 { font-size: 1.8rem; }
-} */
-
 @media only screen and (max-width: 800px) {
     .twitter-card .hidden,
     .instagram-card .hidden,
@@ -260,23 +209,12 @@
     
     .card-glass p .p-3 { font-size: 1.5rem; }
 
-    /* .third-column { margin-left: -2rem; } */
-
-    /* .third-column { margin-left: .5rem; } */
-
     .third-column-animated { align-items: center;}
 
     .whatsapp-card, .twitter-card, .instagram-card { margin-left: 3rem; }
-
-    /* .card-glass-copy { width: 30rem; } */
 }
 
 @media only screen and (max-width: 650px){
-    /* .first-column .card-glass { 
-        border-radius: .9rem;
-        padding: .5rem 1rem; 
-    } */
-
     .card-glass p{ line-height: 1.5rem; }
 
     .card-glass p .p-1 { font-size: .6rem; }
@@ -284,18 +222,14 @@
     .card-glass p .p-2 { font-size: .7rem; }
     
     .card-glass p .p-3 { font-size: 1.3rem; }
-
-    /* .third-column { margin-left: .5rem; } */
-
-    /* .whatsapp-card, .instagram-card { margin-left: 0rem; } */
 }
 
 @media only screen and (max-width: 600px) {
     .second-column {
-        min-width: 200px;
-        width: 200px;
         display: flex;
         justify-content: center;
+        min-width: 200px;
+        width: 200px;
     }
 
     .second-column-animated { width: 200px; }
@@ -314,10 +248,7 @@
 
     .whatsapp-card, .instagram-card { margin-top: 1rem; }
 
-    .card-glass-copy{ 
-        /* margin: 0; */
-        padding: 0 2rem 0 3.2rem;
-    }
+    .card-glass-copy{ padding: 0 2rem 0 3.2rem; }
 }
 
 @media only screen and (max-width: 530px) {
@@ -338,60 +269,7 @@
     .card-glass p .p-2 { font-size: .6rem; }
     
     .card-glass p .p-3 { font-size: 1rem; }
-
-    /* .first-column { margin-right: -2.5rem; } */
 }
-
-/* @media only screen and (max-width: 510px) {
-    .social-logo {
-        height: 3em;
-        width: 3em;
-    }
-
-    .whatsapp-card, .instagram-card { margin-top: 1rem; }
-} */
-
-@media only screen and (max-width: 500px) {
-    /* .card-glass { line-height: 1.3rem; }
-
-    .card-glass p .p-1 { font-size: .6rem; }
-    
-    .card-glass p .p-2 { font-size: .7rem; }
-    
-    .card-glass p .p-3 { font-size: 1.3rem; } */
-
-    /* .card-glass-copy { bottom: 4em; }  */
-
-    /* .whatsapp-card, .instagram-card { margin-left: 0rem; } */
-
-    /* .first-column { margin-bottom: 8rem; }
-
-    .card-glass { margin-right: 8rem; }
-
-    .second-column { margin-left: -11rem; }
-
-    .third-column { 
-        margin-bottom: 2rem;
-        margin-left: 0rem; 
-    } */
-
-    /* .second-column img {
-        height: 255px;
-        width: 200px;
-    } */
-
-    /* .social-logo {
-        height: 2.5em;
-        width: 2.5em;
-    } */
-}
-
-/* @media only screen and (max-width: 405px) {
-    .third-column { 
-        align-items: center;
-        margin-left: -1rem;
-    }
-} */
 
 @media only screen and (max-width: 430px) {
     .first-column { margin-right: -4.5rem; }
@@ -404,61 +282,41 @@
     
     .home-glass { min-width: 320px; }
 } 
-
-/* @media only screen and (max-height: 520px) {
-    .home-screen, .home-glass { min-height: 520px; }
-} */
-
 /* Card con fondo de otro color del Copyright */
-/* @media only screen and (max-height: 430px)  { */
 @media only screen and (max-height: 430px) and (min-width: 551px) {
-    /* .container-home { min-height: 364px; } */
     .card-glass-copy{ 
-        /* margin-top: -3rem;  */
-        margin-top: -2.2rem; 
-        z-index: 100;
-        /* display: flex;
-        width: 100%; */
-        /* align-items: center;
         align-content: center;
-        justify-content: center;
-        display: flex; */
-        padding: 0 8rem;
-        font-size: 1rem;
-
         align-items: center;
-        align-content: center;
-        justify-content: center;
         display: flex;
+        font-size: 1rem;
+        justify-content: center;
+        margin-top: -2.2rem; 
+        padding: 0 8rem;
+        z-index: 100;
     }
 
     .card-glass-copy p {
+        align-items: center;
         background: linear-gradient(152.97deg, rgba(32, 32, 32, 0.602) 0%, rgba(54, 54, 54, 0.466) 100%);
         backdrop-filter: blur(100px);
         border-radius: .5rem;
-        /* width: 18rem; */
-        text-align: center;
-        /* padding: .6rem .5rem 0 .5rem; */
-        padding: 0 .5rem;
-        margin-top: -1.5rem;
-        height: 53px;
-
-        align-items: center;
-        /* align-content: center; */
-        justify-content: center;
         display: flex;
+        height: 53px;
+        justify-content: center;
+        margin-top: -1.5rem;
         min-width: 433px;
+        padding: 0 .5rem;
+        text-align: center;
     }
 }
 
 /* Pantalla horizontal con height pequeña pero con el Navbar en la parte superior */
-/* @media only screen and (max-height: 440px) and (min-width: 600px) { */
 @media only screen and (max-height: 440px) and (min-width: 551px) {
     .second-column {
-        min-width: 200px;
-        width: 200px;
         display: flex;
         justify-content: center;
+        min-width: 200px;
+        width: 200px;
     }
 
     .second-column-animated { width: 200px; }
@@ -473,66 +331,29 @@
 
 /* Pantalla horizontal con height pequeña pero con el Navbar en la parte inferior */
 @media only screen and (max-height: 440px) and (max-width: 550px) {
-    /* .container-home { min-height: 309px; } */
     .card-glass-copy{ 
-        margin-top: -5rem; 
-        z-index: 100;
-        /* display: flex;
-        width: 100%; */
-        align-items: flex-end;
-        padding: 0 8rem;
-
         align-items: center;
         align-content: center;
-        justify-content: center;
         display: flex;
+        justify-content: center;
+        margin-top: -5rem; 
+        padding: 0 8rem;
+        z-index: 100;
     }
 
     .card-glass-copy p {
+        align-items: center;
         background: linear-gradient(152.97deg, rgba(32, 32, 32, 0.602) 0%, rgba(54, 54, 54, 0.466) 100%);
         backdrop-filter: blur(100px);
         border-radius: .5rem;
-        /* width: 18rem; */
-        text-align: center;
-        /* padding: .9rem 0 0 0; */
-        margin-top: -.5rem;
-        min-width: 325px;
-
-        align-items: center;
-        justify-content: center;
         display: flex;
         flex-direction: column;
-        /* min-width: 433px; */
         font-size: 1.1rem;
+        justify-content: center;
+        margin-top: -.5rem;
+        min-width: 325px;
+        text-align: center;
     }
 
     .container-home { min-height: 277px; }
 }
-
-/* @media only screen and (max-height: 340px) and (min-width: 599px) {
-    .container-home { min-height: 294px; }
-} */
-
-
-/* @media only screen and (max-height: 520px) and (max-width: 500px) {
-    .home-screen, .home-glass { min-height: 0; }
-
-    .card-glass-copy {
-        right: 1rem;
-        width: 20rem;
-    }
-
-    .card-glass-copy p{
-        background: linear-gradient(152.97deg, rgba(32, 32, 32, 0.602) 0%, rgba(54, 54, 54, 0.466) 100%);
-        backdrop-filter: blur(100px);
-        border-radius: .5rem;
-        font-size: 1.1em;
-        padding: .1em;
-        text-align: center;
-    }
-
-    .third-column { margin-bottom: 8rem; }
-
-    .whatsapp-card, .instagram-card { margin-top: .5rem; }
-} */
-
