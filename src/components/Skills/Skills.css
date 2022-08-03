@@ -68,7 +68,3 @@ body .skills-screen {
 @media only screen and (min-width: 900px) {
     .title-skill { font-size: 1.3rem; }
 }
-
-@media only screen and (max-height: 770px) and (min-width: 551px) {
-    .skills-screen { margin-bottom: 1rem; }
-}

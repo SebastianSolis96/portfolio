@@ -1,4 +1,10 @@
-// export const ProjectsCard = ({ ...props }) => {
+import { useContext } from 'react';
+
+import { ProjectsContext } from '../../context/ProjectsContext';
+import { types } from '../../types/types';
+
+import './Projects.css';
+
 export const ProjectsCard = ({ 
     id,
     title,
@@ -12,20 +18,28 @@ export const ProjectsCard = ({
     info
 }) => {
 
-    // console.log(buttons);
+    const { dispatch } = useContext(ProjectsContext);
+
+    const openModal = (e) => {
+        e.preventDefault();
+        dispatch({ type: types.modalOpen });
+        dispatch({
+            type: types.projectModal,
+            payload: id
+        });
+    }
 
     return (
         <div className="card-project">
             <img className="img-project-card" src={ url } alt={ title } />
             <h1 className="title-project-card">{ title }</h1>
-            {/* overlay title */}
             <div className="buttons-hover">
                 {
                     buttons.map( button => 
                         ( button === 'more' ) 
                             ?   <div 
                                     key={ id+2 } 
-                                    onClick={() => {}}
+                                    onClick={openModal}
                                 >
                                     <span className="icon-button-project view"></span>
                                     VER MÁS
@@ -33,7 +47,6 @@ export const ProjectsCard = ({
                             :   ( button === 'github' ) 
                                 ?   <a 
                                         key={ id+1 } 
-                                        // href="https://www.geeksforgeeks.org" 
                                         href={ link_github }
                                         target="_blank" 
                                         rel="noreferrer"
@@ -43,7 +56,6 @@ export const ProjectsCard = ({
                                     </a>
                                 :   <a 
                                         key={ id } 
-                                        // href="https://www.geeksforgeeks.org" 
                                         href={ link_demo } 
                                         target="_blank" 
                                         rel="noreferrer"

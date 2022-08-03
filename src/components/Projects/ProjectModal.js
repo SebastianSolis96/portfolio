@@ -1,4 +1,13 @@
+import { useContext, useEffect, useMemo, useRef, useState } from 'react';
 import Modal from 'react-modal/lib/components/Modal';
+import {motion} from 'framer-motion/dist/es/index';
+
+import { ProjectsContext } from '../../context/ProjectsContext';
+
+import './Projects.css';
+import { types } from '../../types/types';
+import { getProjectsById } from '../../helpers/getProjectsById';
+
 
 export const ProjectModal = () => {
 
@@ -12,32 +21,83 @@ export const ProjectModal = () => {
     };
     Modal.setAppElement('#root');
 
+    const { projectReducer:{ modal, projectOnModal }, dispatch } = useContext(ProjectsContext);
+    
+    const [ widthCarousel, setWidthCarousel ] = useState(0);
+    const carousel = useRef();
+
+    const projectModal = useMemo( () =>  getProjectsById( projectOnModal ), [ projectOnModal ]);
+
+    /* Set end scroll Carousel */
+    useEffect(() => {
+        setTimeout(() => {
+            setWidthCarousel(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
+        }, 3);
+    }, [projectModal]);
+
+    const closeModal = (e) => {
+        e.preventDefault();
+        dispatch({ type: types.modalOpen });
+        dispatch({ type: types.cleanProjectModal });
+    }
+
     return (
         <Modal
-            isOpen={ true }
-            // isOpen={ modalOpen }
-            // onRequestClose={ closeModal }
-            // shouldCloseOnOverlayClick={false}
+            isOpen={ modal }
+            onRequestClose={ closeModal }
+            shouldCloseOnOverlayClick={false}
             style={ customStyles }
             closeTimeoutMS={ 200 }
             className="modal"
             overlayClassName="background-modal"
         >
             <div className="close-modal">
-                <div className="close-button">x</div>
+                <div 
+                    className="close-button"
+                    onClick={ closeModal }
+                >
+                    X
+                </div>
             </div>
             <div className="modal-container">
-                <h1>SISTEMA DE FACTURACIÓN WEB</h1>
+                <h1>{ projectModal?.title }</h1>
+
+                {( projectModal?.imgs_carousel.length > 1 ) 
+                    ?   <motion.div className="carousel">
+                            <motion.div 
+                                ref={ carousel }
+                                drag="x"
+                                dragConstraints={{ right: 0, left: -widthCarousel }}
+                                className="inner-carousel"
+                            >
+                                { projectModal?.imgs_carousel.map( img => {
+                                    return(
+                                        <motion.div className="item-carousel" key={ img }>
+                                            <img src={ img } alt={ img } />
+                                        </motion.div>
+                                    );
+                                })}
+                            </motion.div>
+                        </motion.div>
+                    :   <div className="carousel">
+                            <img className="img-modal" src={ projectModal?.url } alt="1" />
+                        </div>
+                }
+
                 <div className="tags-container">
-                    <div className="tag">HTML</div>
-                    <div className="tag">CSS</div>
-                    <div className="tag">JAVASCRIPT</div>
-                    <div className="tag">REACT</div>
+                    { projectModal?.language.map( tech => {
+                        return(
+                            <div className="tag" key={ tech }>{ tech }</div>
+                        );
+                    })}
                 </div>
+
                 <div className="info-container">
-                    <p>
-                        Esta es una aplicación hecha con React y otras tecnologías como NodeJS y Express.js. Está construida con PERN Stack y .........................
-                    </p>
+                    { projectModal?.info.map( p => {
+                        return(
+                            <p key={ p }>{ p }</p>
+                        );
+                    })}
                 </div>
             </div>
         </Modal>

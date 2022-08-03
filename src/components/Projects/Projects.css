@@ -4,12 +4,11 @@ body .projects-screen {
     flex-direction: row;
     flex-wrap: wrap;
     height: 86%;
-    /* justify-content: flex-start; */
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    min-height: 50px;
     overflow-x: hidden;
-    /* overflow-y: scroll; */
-    padding: 0 3rem;
+    padding: 0 .5rem;
     width: 100%;
 }
 
@@ -22,15 +21,15 @@ body .projects-screen {
 
 .tabs {
     cursor: pointer;
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-size: .75rem;
+    font-weight: 600;
     height: fit-content;
-    padding: 0 1.5rem .2rem 1.5rem;
+    padding: 0 .5rem .2rem .5rem;
     width: fit-content;
 }
 
 .active-tabs {
-    border-bottom: 8px solid transparent;
+    border-bottom: 5px solid transparent;
     border-image: linear-gradient(90deg, #3BA9C3 0%, rgba(135, 112, 200, 0.694055) 73.16%, rgba(241, 32, 207, 0.15) 100%);
     border-image-slice: 1;
 }
@@ -39,19 +38,11 @@ body .projects-screen {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* max-height: 800px; */
-    height: 90%;
-    /* justify-content: space-between; */
-    justify-content: safe;
-    /* max-width: 800px; */
-    /* max-height: 800px; PARA LA ALTURA DEL CONTAINER Y QUE NO SE SEPAREN MUCHO LAS TARJETAS DE ARRIBA CON LAS DE ABAJO PERO VER CUANTOS PROYECTOS TENDRÉ EN TOTAL EN ALL */ 
-    max-height: 600px;
-    min-height: 100px;
+    height: 95%;
+    justify-content: center;
     overflow-x: hidden;
     overflow-y: scroll;
-    /* width: 85%; */
     width: fit-content;
-    /* padding: 0 10rem; */
 }
 
 .card-project {
@@ -64,11 +55,8 @@ body .projects-screen {
     flex: 1 0 21%;
     filter: drop-shadow(0px 4px 4px rgba(19, 19, 19, 0.25));
     flex-direction: column;
-    /* height: 200px; */
     height: 143.08px;
-    /* justify-content: center; */
     margin: 1rem;
-    /* min-width: 100px; */
     max-width: 220px;
     min-width: 220px;
 }
@@ -92,37 +80,22 @@ body .projects-screen {
 }
 
 .buttons-hover {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.65);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: rgba(0, 0, 0, 0.65);
-    /* background-color: rgb(255, 255, 255, 0.4); */
-    /* position: absolute; */
-    /*title is positioned at the top of container div*/
-    /* top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0; */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: .3rem;
-    margin-top: -9rem;
-    /* color: white; */
     height: 112px;
-    width: 220px;
-    /* font-size: 25px; */
-    /* padding: 15px 0; */
-    /* text-align: center; */
-    /*title div is at the back of container and hence not visible*/
-    z-index: -1;
+    justify-content: space-around;
+    margin-top: -9rem;
+    padding: .3rem;
     transition: 0.6s ease-in-out;
+    width: 220px;
+    z-index: -1;
 }
 
-.card-project:hover .buttons-hover {
-    /*becomes visible on hover as title comes on top of container*/
-    z-index: 0;
-}
+.card-project:hover .buttons-hover { z-index: 0; }
 
 .buttons-hover a, .buttons-hover div {
     align-items: center;
@@ -132,17 +105,17 @@ body .projects-screen {
     cursor: pointer;
     height: 1.65rem;
     justify-content: flex-start;
+    padding-left: .8rem;
     text-align: center;
     text-decoration: none;
     width: 60%;
-    padding-left: .8rem;
 }
 
 .icon-button-project {
     background-repeat: no-repeat;
     height: 20px;
-    width: 20px;
     margin-right: .5rem;
+    width: 20px;
 }
 
 .more { background-image: url('/src/backgrounds/info_icon.svg'); }
@@ -194,7 +167,7 @@ body .projects-screen {
 .close-modal {
     display: flex;
     height: fit-content;
-    justify-content: end;
+    justify-content: flex-end;
     width: 100%;
 }
 
@@ -202,9 +175,172 @@ body .projects-screen {
     align-items: center;
     background: red;
     border-radius: .3rem;
+    cursor: pointer;
     display: flex;
-    height: 2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    height: 1.8rem;
     justify-content: center;
     width: 2rem;
 }
+
+.modal-container {
+    height: 95%;
+    overflow: hidden;
+    padding: .5rem 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.modal-container h1 {
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 700;
+    height: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+    /* CAROUSEL */
+.carousel {
+    background-color: #313131;
+    border-radius: .5rem;
+    cursor: grab;
+    height: 9rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.inner-carousel{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.item-carousel {
+    height: 100%;
+    min-width: 300px;
+    padding: 0 .5rem;
+    width: 90%;
+}
+
+.item-carousel img { 
+    border-radius: .2rem;
+    height: 100%;
+    pointer-events: none;
+    width: 100%;
+}
+
+.img-modal {
+    height: 100%;
+    width: 100%;
+}
+
+.tags-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+    margin-top: .2rem;
+    width: 100%;
+}
+
+.tag {
+    background: #3BA9C3;
+    border-radius: .2rem;
+    color: #fff;
+    font-size: .6rem;
+    font-weight: 700;
+    height: max-content;
+    margin: .3rem;
+    padding: .3rem .7rem;
+    text-align: center;
+    width: auto;
+}
+
+.info-container {
+    background-color: #313131;
+    border: .5px solid #535353;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 45%;
+    margin-top: .5rem;
+    min-height: 206px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: .7rem;
+    text-align: justify;
+    width: 100%;
+    z-index: 100;
+}
+
+.info-container p {
+    height: auto;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
 /* END: MODAL */
+
+@media only screen and (max-width: 440px) {
+    .modal { width: 330px; }
+
+    .modal-container h1 { font-size: 1.08rem; }
+}
+
+@media only screen and (min-width: 525px) {
+    body .projects-screen { padding: 0 1rem; }
+
+    .tabs {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 541px) {
+    .projects-container { justify-content: flex-start; }
+}
+
+@media only screen and (min-width: 551px) {
+    .projects-container { justify-content: space-evenly; }
+}
+
+@media only screen and (min-width: 793px) {
+    .projects-container {
+        max-height: 525px;
+        min-height: 100px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    body .projects-screen { 
+        margin-top: 2rem; 
+        padding: 0 3rem;
+    }
+
+    .tabs { 
+        font-size: 1.3rem; 
+        padding: 0 1.5rem .2rem 1.5rem;
+    }
+
+    .active-tabs { border-bottom: 8px solid transparent; }
+
+    .projects-container { height: 90%; }
+}
+
+@media only screen and (min-width: 1361px) {
+    .projects-container { max-height: 350px; }
+}
+
+@media only screen and (max-height: 530px) {
+    .ReactModalPortal .ReactModal__Overlay {
+        align-items: flex-start;
+        justify-content: center;
+        overflow-y: scroll;
+    }
+
+    .modal { margin: 1rem 0; min-height: 520px; }
+}

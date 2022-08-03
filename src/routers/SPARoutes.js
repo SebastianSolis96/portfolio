@@ -8,11 +8,18 @@ import { SkillsScreen } from '../components/Skills/SkillsScreen';
 import { ProjectsContext } from '../context/ProjectsContext';
 import { projectsReducer } from '../context/projectsReducer';
 
-const init = () => { return ""; };
+// const init = () => { return ""; };
+const init = () => { 
+    return {
+        param: 'all',
+        modal: false,
+        projectOnModal: '',
+    }
+};
 
 export const SPARoutes = () => {
 
-    const [ searchParam, dispatch ] = useReducer( projectsReducer, {}, init );
+    const [ projectReducer, dispatch ] = useReducer( projectsReducer, {}, init );
 
     return (
         <>
@@ -21,7 +28,7 @@ export const SPARoutes = () => {
                 <Route path="/skills" element={ <SkillsScreen /> } />
                 {/* <Route path="/proyectos" element={ <ProjectsScreen /> } /> */}
                 <Route path="/proyectos" element={ 
-                    <ProjectsContext.Provider value={{ searchParam, dispatch }} >
+                    <ProjectsContext.Provider value={{ projectReducer, dispatch }} >
                         <ProjectsScreen />
                     </ProjectsContext.Provider>
                 }/>
