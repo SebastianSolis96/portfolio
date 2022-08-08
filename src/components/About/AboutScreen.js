@@ -1,7 +1,7 @@
-import React from 'react';
 import {motion} from 'framer-motion/dist/es/index';
 
 import { getAge } from '../../helpers/getAge';
+
 import './About.css';
 
 export const AboutScreen = () => {

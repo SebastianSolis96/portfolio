@@ -42,13 +42,13 @@ export const projects = [
             'more', 
             'github'
         ],
-        'link_github': 'https://github.com/SebastianSolis96/portfolio',
+        'link_github': 'https://github.com/SebastianSolis96/Portfolio_Sebastian',
         'imgs_carousel': [ 
             '/assets/portfolio_1.svg', 
             '/assets/portfolio_2.svg', 
             '/assets/portfolio_3.svg', 
             '/assets/portfolio_4.svg', 
-            '/assets/portfolio_1.svg' //CAMBIAR A: portfolio_5 cuando termine Contacto
+            '/assets/portfolio_5.svg'
         ],
         'language': [ 
             'HTML', 

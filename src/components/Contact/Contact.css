@@ -1,0 +1,91 @@
+body .contact-screen {
+    align-items: flex-start;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.cards-container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 650px;
+    min-height: 650px;
+    padding: .5rem 0;
+}
+
+.card {
+    background-color: #000;
+    border-radius: 1rem;
+    box-shadow: 5px 20px 25px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display: flex;
+    flex: 1 0 25%;
+    margin: 1.5rem;
+    max-height: 110px;
+    max-width: 300px;
+    min-height: 110px;
+    min-width: 300px;
+    padding: .3rem;
+    padding-left: .5rem;
+}
+
+.card:hover {
+    max-height: 120px;
+    max-width: 310px;
+}
+
+.logo-card { 
+    height: 100px; 
+    width: 100px;
+}
+
+.info-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.info-card p {
+    height: auto;
+    width: auto;
+}
+
+.title-card {
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.user-card {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.email { font-size: 1rem; }
+
+.twitter { background: #50ABF1; }
+.instagram { background: linear-gradient(241.56deg, #B23793 -10.58%, rgba(221, 65, 108, 0.825703) 40.79%, rgba(237, 105, 68, 0.757851) 63.87%, rgba(250, 143, 33, 0.88) 85.23%); }
+.outlook { background: #007CDA; }
+.whatsapp { background: #1BD741; }
+
+@media only screen and (min-width: 680px) {
+    .cards-container { 
+        max-height: 350px;
+        max-width: 964px;
+        min-height: 350px;
+    }
+
+    .card { margin: 1.5rem .8rem; }
+}
+
+@media only screen and (min-width: 900px) {
+    .cards-container { max-width: 1000px; }
+
+    .card { margin: 2rem 3.5rem }
+}

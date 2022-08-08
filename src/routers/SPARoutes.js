@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import { useReducer } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import { AboutScreen } from '../components/About/AboutScreen';

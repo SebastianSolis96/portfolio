@@ -3,10 +3,10 @@ import Modal from 'react-modal/lib/components/Modal';
 import {motion} from 'framer-motion/dist/es/index';
 
 import { ProjectsContext } from '../../context/ProjectsContext';
+import { getProjectsById } from '../../helpers/getProjectsById';
+import { types } from '../../types/types';
 
 import './Projects.css';
-import { types } from '../../types/types';
-import { getProjectsById } from '../../helpers/getProjectsById';
 
 
 export const ProjectModal = () => {
