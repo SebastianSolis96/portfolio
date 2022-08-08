@@ -13,7 +13,6 @@ import { SkillsScreen } from '../components/Skills/SkillsScreen';
 import { ProjectsContext } from '../context/ProjectsContext';
 import { projectsReducer } from '../context/projectsReducer';
 import { ContactScreen } from '../components/Contact/ContactScreen';
-// import { SPARoutes } from './SPARoutes';
 
 import './Router.css';
 
@@ -51,8 +50,6 @@ export const AppRouter = () => {
                         <Route path="/contacto" element={ <ContactScreen /> } />
 
                         <Route path="/*" element={<HomeScreen />} />    
-
-                        {/* <Route path="/*" element={<SPARoutes />} /> */}
                     </Routes>
                 </BrowserRouter>
             </div>
