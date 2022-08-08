@@ -42,7 +42,7 @@ export const projects = [
             'more', 
             'github'
         ],
-        'link_github': 'https://github.com/SebastianSolis96/Portfolio_Sebastian',
+        'link_github': 'https://github.com/SebastianSolis96/portfolio',
         'imgs_carousel': [ 
             '/assets/portfolio_1.svg', 
             '/assets/portfolio_2.svg', 
