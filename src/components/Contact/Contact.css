@@ -44,6 +44,23 @@ body .contact-screen {
     width: 100px;
 }
 
+.logo-card .smooth-image-wrapper { 
+    height: 100px; 
+    width: 100px; 
+}
+
+.logo-card .smooth-image-wrapper .img-visible { border-radius: 1rem; }
+
+.logo-card .smooth-preloader {
+    background: rgb(110, 110, 110);
+    border-radius: 1rem;
+}
+
+.logo-card .smooth-image-wrapper .smooth-preloader .loader {
+    background-image: linear-gradient(to right, #666666, rgb(110, 110, 110), #636363);
+    border-radius: 1rem;
+}
+
 .info-card {
     align-items: center;
     display: flex;

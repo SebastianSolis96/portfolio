@@ -12,9 +12,9 @@ export const HomeScreen = () => {
                 <div className="first-column">
                     <motion.div
                         className="card-glass"
-                        initial={{ scale: 0.5 }}
-                        animate={{ scale: 1 }}
-                        transition={{ type: "spring", stiffness: 100 }}
+                        initial={{ x: -1000 }}
+                        animate={{ x: 1 }}
+                        transition={{ type: "tween", duration: 0.5 }}
                     >
                         <p>
                             <span className="p-2">¡HOLA! 👋 SOY</span><br />
@@ -29,7 +29,7 @@ export const HomeScreen = () => {
                         className="second-column-animated"
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
-                        transition={{ type: "spring", stiffness: 100 }}
+                        transition={{ type: "spring", stiffness: 150 }}
                     >
                         <img src="/assets/profile.png"  alt="Sebastian Solis" />
                     </motion.div>
@@ -38,9 +38,9 @@ export const HomeScreen = () => {
                 <div className="third-column">
                     <motion.div
                         className="third-column-animated"
-                        initial={{ scale: 0.59 }}
-                        animate={{ scale: 1 }}
-                        transition={{ type: "spring", stiffness: 100 }}
+                        initial={{ x: 1000 }}
+                        animate={{ x: 1 }}
+                        transition={{ type: "tween", duration: 0.5 }}
                     >
                         <div className="twitter-card">
                             <a href="https://twitter.com/sebascript_" target="_blank" rel="noreferrer">
@@ -81,7 +81,6 @@ export const HomeScreen = () => {
                 </div>
 
             </div>
-            
             <div className="card-glass-copy">
                 <p>@{ year } | Todos los derechos reservados  
                     <a className="decoration-link pl-1" href="https://twitter.com/sebascript_" target="_blank" rel="noreferrer">

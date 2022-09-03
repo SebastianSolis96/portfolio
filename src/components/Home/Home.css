@@ -282,6 +282,7 @@
     
     .home-glass { min-width: 320px; }
 } 
+
 /* Card con fondo de otro color del Copyright */
 @media only screen and (max-height: 430px) and (min-width: 551px) {
     .card-glass-copy{ 

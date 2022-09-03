@@ -2,17 +2,17 @@ export const projects = [
     {
         'id': 1,
         'title': 'SISTEMA DE FACTURACIÓN WEB',
-        'url': '/assets/invoice_web_5.svg',
+        'url': '/assets/invoice_web_5.jpg',
         'tag_project': 'react',
         'buttons': [ 
             'more' 
         ],
         'imgs_carousel': [ 
-            '/assets/invoice_web_1.svg', 
-            '/assets/invoice_web_2.svg', 
-            '/assets/invoice_web_3.svg', 
-            '/assets/invoice_web_4.svg', 
-            '/assets/invoice_web_5.svg' 
+            '/assets/invoice_web_1.jpg', 
+            '/assets/invoice_web_2.jpg', 
+            '/assets/invoice_web_3.jpg', 
+            '/assets/invoice_web_4.jpg', 
+            '/assets/invoice_web_5.jpg' 
         ],
         'language': [ 
             'HTML', 
@@ -36,7 +36,7 @@ export const projects = [
     {
         'id': 2,
         'title': 'MI PORTAFOLIO',
-        'url': '/assets/portfolio_1.svg',
+        'url': '/assets/portfolio_1.jpg',
         'tag_project': 'react',
         'buttons': [
             'more', 
@@ -44,11 +44,11 @@ export const projects = [
         ],
         'link_github': 'https://github.com/SebastianSolis96/portfolio',
         'imgs_carousel': [ 
-            '/assets/portfolio_1.svg', 
-            '/assets/portfolio_2.svg', 
-            '/assets/portfolio_3.svg', 
-            '/assets/portfolio_4.svg', 
-            '/assets/portfolio_5.svg'
+            '/assets/portfolio_1.jpg', 
+            '/assets/portfolio_2.jpg', 
+            '/assets/portfolio_3.jpg', 
+            '/assets/portfolio_4.jpg', 
+            '/assets/portfolio_5.jpg'
         ],
         'language': [ 
             'HTML', 
@@ -66,13 +66,13 @@ export const projects = [
     {
         'id': 3,
         'title': 'SISTEMA DE FACTURACIÓN APK',
-        'url': '/assets/invoice_apk_1.svg',
+        'url': '/assets/invoice_apk_1.jpg',
         'tag_project': 'android',
         'buttons': [
             'more'
         ],
         'imgs_carousel': [ 
-            '/assets/invoice_apk_1.svg',
+            '/assets/invoice_apk_1.jpg',
         ],
         'language': [ 
             'JAVA', 
@@ -90,7 +90,7 @@ export const projects = [
     {
         'id': 4,
         'title': 'SUSHI APP',
-        'url': '/assets/sushi_1.svg',
+        'url': '/assets/sushi_1.jpg',
         'tag_project': 'ui',
         'buttons': [
             'more', 
@@ -98,7 +98,7 @@ export const projects = [
         ],
         'link_demo': 'https://www.instagram.com/reel/CalHTtOpK0X/?utm_source=ig_web_copy_link',
         'imgs_carousel': [ 
-            '/assets/sushi_1.svg' 
+            '/assets/sushi_1.jpg' 
         ],
         'language': [ 
             'FIGMA', 
@@ -111,7 +111,7 @@ export const projects = [
     {
         'id': 5,
         'title': 'SPOTITUBE',
-        'url': '/assets/spotitube_1.svg',
+        'url': '/assets/spotitube_1.jpg',
         'tag_project': 'ui',
         'buttons': [
             'more', 
@@ -119,11 +119,11 @@ export const projects = [
         ],
         'link_demo': 'https://www.instagram.com/p/CWQ9j7DJr-j/?utm_source=ig_web_copy_link',
         'imgs_carousel': [ 
-            '/assets/spotitube_2.svg', 
-            '/assets/spotitube_3.svg', 
-            '/assets/spotitube_4.svg', 
-            '/assets/spotitube_5.svg', 
-            '/assets/spotitube_6.svg' 
+            '/assets/spotitube_2.jpg', 
+            '/assets/spotitube_3.jpg', 
+            '/assets/spotitube_4.jpg', 
+            '/assets/spotitube_5.jpg', 
+            '/assets/spotitube_6.jpg' 
         ],
         'language': [ 
             'FIGMA', 
@@ -136,7 +136,7 @@ export const projects = [
     {
         'id': 6,
         'title': 'BLOOB STORE',
-        'url': '/assets/bloob_1.svg',
+        'url': '/assets/bloob_1.jpg',
         'tag_project': 'html',
         'buttons': [
             'more',
@@ -146,15 +146,15 @@ export const projects = [
         'link_github': 'https://github.com/SebastianSolis96/bloob-store',
         'link_demo': 'https://sebastiansolisporfolio.on.drv.tw/Bloob%20Store',
         'imgs_carousel': [ 
-            '/assets/bloob_1.svg', 
-            '/assets/bloob_2.svg', 
-            '/assets/bloob_3.svg', 
-            '/assets/bloob_4.svg', 
-            '/assets/bloob_5.svg', 
-            '/assets/bloob_6.svg', 
-            '/assets/bloob_7.svg', 
-            '/assets/bloob_8.svg', 
-            '/assets/bloob_9.svg', 
+            '/assets/bloob_1.jpg', 
+            '/assets/bloob_2.jpg', 
+            '/assets/bloob_3.jpg', 
+            '/assets/bloob_4.jpg', 
+            '/assets/bloob_5.jpg', 
+            '/assets/bloob_6.jpg', 
+            '/assets/bloob_7.jpg', 
+            '/assets/bloob_8.jpg', 
+            '/assets/bloob_9.jpg', 
         ],
         'language': [ 
             'HTML', 
@@ -168,8 +168,8 @@ export const projects = [
     {
         'id': 7,
         'title': 'FORM VALIDATOR',
-        'url': '/assets/form_validator_1.svg',
-        'tag_project': 'ui',
+        'url': '/assets/form_validator_1.jpg',
+        'tag_project': 'html',
         'buttons': [
             'more', 
             'github',
@@ -178,7 +178,7 @@ export const projects = [
         'link_github': 'https://github.com/SebastianSolis96/form-validator',
         'link_demo': 'https://sebastiansolisporfolio.on.drv.tw/Form%20Validator/',
         'imgs_carousel': [ 
-            '/assets/form_validator_1.svg'
+            '/assets/form_validator_1.jpg'
         ],
         'language': [ 
             'HTML', 
@@ -193,7 +193,7 @@ export const projects = [
     {
         'id': 8,
         'title': 'DIGITAL CLOCK',
-        'url': '/assets/digital_clock_1.svg',
+        'url': '/assets/digital_clock_1.jpg',
         'tag_project': 'html',
         'buttons': [
             'more',
@@ -203,7 +203,7 @@ export const projects = [
         'link_github': 'https://github.com/SebastianSolis96/digital-clock',
         'link_demo': 'https://sebastiansolisporfolio.on.drv.tw/Digital%20Clock/',
         'imgs_carousel': [ 
-            '/assets/digital_clock_1.svg'
+            '/assets/digital_clock_1.jpg'
         ],
         'language': [ 
             'HTML', 
@@ -217,7 +217,7 @@ export const projects = [
     {
         'id': 9,
         'title': 'TODO APP',
-        'url': '/assets/todo_app_1.svg',
+        'url': '/assets/todo_app_1.jpg',
         'tag_project': 'html',
         'buttons': [
             'more',
@@ -227,7 +227,7 @@ export const projects = [
         'link_github': 'https://github.com/SebastianSolis96/todo-app',
         'link_demo': 'https://sebastiansolisporfolio.on.drv.tw/To%20Do/',
         'imgs_carousel': [ 
-            '/assets/todo_app_1.svg'
+            '/assets/todo_app_1.jpg'
         ],
         'language': [ 
             'HTML', 

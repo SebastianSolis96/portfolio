@@ -52,6 +52,16 @@ body .skills-screen {
     width: 45px;
 }
 
+.icon-skill .smooth-preloader {
+    background: rgb(110, 110, 110);
+    border-radius: 10rem;
+}
+
+.icon-skill .smooth-image-wrapper .smooth-preloader .loader {
+    background-image: linear-gradient(to right, #666666, rgb(110, 110, 110), #636363);
+    border-radius: 10rem;
+}
+
 .title-skill {
     font-size: 1.1rem;
     font-weight: 700;

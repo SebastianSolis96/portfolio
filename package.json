@@ -18,6 +18,7 @@
     "react-modal": "^3.15.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^4.0.3",
+    "render-smooth-image-react": "^1.0.3",
     "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"
   },

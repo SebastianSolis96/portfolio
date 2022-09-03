@@ -13,19 +13,21 @@ export const ProjectsScreen = () => {
     const { projectReducer:{ param } } = useContext(ProjectsContext);
 
     const projects = useMemo( () =>  getProjectsByParam( param || 'all' ), [ param ] );
-
+    
     return (
         <div className="projects-screen">
             <Tabs />
             
             <div className="projects-container">
-                {
-                    projects.map( project => 
-                        <ProjectsCard 
-                            key={ project.id }
-                            { ...project }
-                        />
-                    )
+                {projects.length > 0
+                    ?   projects.map( project => 
+                            <ProjectsCard 
+                                key={ project.id }
+                                { ...project }
+                            />
+                        )
+                    :   <div className="card-project">
+                        </div>
                 }
             </div>
 

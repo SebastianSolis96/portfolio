@@ -1,13 +1,14 @@
 import { useContext, useEffect, useMemo, useRef, useState } from 'react';
 import Modal from 'react-modal/lib/components/Modal';
 import {motion} from 'framer-motion/dist/es/index';
+import RenderSmoothImage from 'render-smooth-image-react';
+import 'render-smooth-image-react/build/style.css';
 
 import { ProjectsContext } from '../../context/ProjectsContext';
 import { getProjectsById } from '../../helpers/getProjectsById';
 import { types } from '../../types/types';
 
 import './Projects.css';
-
 
 export const ProjectModal = () => {
 
@@ -31,7 +32,7 @@ export const ProjectModal = () => {
     /* Set end scroll Carousel */
     useEffect(() => {
         setTimeout(() => {
-            setWidthCarousel(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
+            setWidthCarousel(carousel.current?.scrollWidth - carousel.current?.offsetWidth + 1)
         }, 3);
     }, [projectModal]);
 
@@ -73,14 +74,14 @@ export const ProjectModal = () => {
                                 { projectModal?.imgs_carousel.map( img => {
                                     return(
                                         <motion.div className="item-carousel" key={ img }>
-                                            <img src={ img } alt={ img } />
+                                            <RenderSmoothImage src={ img } alt={ img } />
                                         </motion.div>
                                     );
                                 })}
                             </motion.div>
                         </motion.div>
                     :   <div className="carousel">
-                            <img className="img-modal" src={ projectModal?.url } alt="1" />
+                            <RenderSmoothImage src={ projectModal?.url ? projectModal?.url : '' } alt={ projectModal?.url } />
                         </div>
                 }
 

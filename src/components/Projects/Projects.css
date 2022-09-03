@@ -62,10 +62,25 @@ body .projects-screen {
 }
 
 .img-project-card {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     height: 111.08px;
     width: 220px;
+}
+
+.img-project-card .smooth-image-wrapper .img-visible {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.img-project-card .smooth-preloader {
+    background: rgb(54, 54, 54);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.img-project-card .smooth-image-wrapper .smooth-preloader .loader {
+    background-image: linear-gradient(to right, #242424, rgb(54, 54, 54), #1c1c1c);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .title-project-card {
@@ -177,9 +192,9 @@ body .projects-screen {
     border-radius: .3rem;
     cursor: pointer;
     display: flex;
-    font-size: 1.3rem;
+    font-size: .8rem;
     font-weight: 700;
-    height: 1.8rem;
+    height: 1.3rem;
     justify-content: center;
     width: 2rem;
 }
@@ -187,7 +202,7 @@ body .projects-screen {
 .modal-container {
     height: 95%;
     overflow: hidden;
-    padding: .5rem 0;
+    padding: .3rem 0;
     width: 100%;
     z-index: 0;
 }
@@ -206,8 +221,8 @@ body .projects-screen {
     background-color: #313131;
     border-radius: .5rem;
     cursor: grab;
-    height: 9rem;
-    margin-top: 1rem;
+    height: 12.3rem;
+    margin-top: .3rem;
     overflow: hidden;
     width: 100%;
 }
@@ -220,16 +235,28 @@ body .projects-screen {
 
 .item-carousel {
     height: 100%;
-    min-width: 300px;
-    padding: 0 .5rem;
-    width: 90%;
+    min-width: 400px;
+    padding-right: .5rem;
+    width: 100%;
 }
 
 .item-carousel img { 
-    border-radius: .2rem;
+    border-radius: .5rem;
     height: 100%;
     pointer-events: none;
     width: 100%;
+}
+
+.carousel .smooth-image-wrapper .img-visible { border-radius: .5rem; }
+
+.carousel .smooth-preloader {
+    background: rgb(54, 54, 54);
+    border-radius: .5rem;
+}
+
+.carousel .smooth-image-wrapper .smooth-preloader .loader {
+    background-image: linear-gradient(to right, #242424, rgb(54, 54, 54), #1c1c1c);
+    border-radius: .5rem;
 }
 
 .img-modal {
@@ -254,7 +281,7 @@ body .projects-screen {
     font-size: .6rem;
     font-weight: 700;
     height: max-content;
-    margin: .3rem;
+    margin: .1rem .3rem;
     padding: .3rem .7rem;
     text-align: center;
     width: auto;
@@ -289,6 +316,13 @@ body .projects-screen {
     .modal { width: 330px; }
 
     .modal-container h1 { font-size: 1.08rem; }
+
+    .tag { padding: .3rem .3rem; }
+
+    .info-container p{
+        font-size: .8rem;
+        line-height: 1.8;
+    }
 }
 
 @media only screen and (min-width: 525px) {

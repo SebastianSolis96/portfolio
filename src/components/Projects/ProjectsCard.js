@@ -1,4 +1,6 @@
 import { useContext } from 'react';
+import RenderSmoothImage from 'render-smooth-image-react';
+import 'render-smooth-image-react/build/style.css';
 
 import { ProjectsContext } from '../../context/ProjectsContext';
 import { types } from '../../types/types';
@@ -31,8 +33,12 @@ export const ProjectsCard = ({
 
     return (
         <div className="card-project">
-            <img className="img-project-card" src={ url } alt={ title } />
+            <div className="img-project-card">
+                <RenderSmoothImage className="img-project-card" src={ url } alt={ title } />
+            </div>
+            
             <h1 className="title-project-card">{ title }</h1>
+
             <div className="buttons-hover">
                 {
                     buttons.map( button => 

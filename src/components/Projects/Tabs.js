@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 
 import { ProjectsContext } from '../../context/ProjectsContext';
 import { types } from '../../types/types';
@@ -7,11 +7,15 @@ export const Tabs = () => {
 
     const { dispatch } = useContext(ProjectsContext);
 
+    const { projectReducer:{ param } } = useContext(ProjectsContext);
+
     const [ toggleState, setToggleState ] = useState('all');
 
-    const handleToggle = ( index ) => {
-        setToggleState(index);
+    useEffect(() => {
+        setToggleState(param);
+    }, [param]);
 
+    const handleToggle = ( index ) => {
         dispatch({
             type: types.toggle,
             payload: index
