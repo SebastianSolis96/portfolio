@@ -78,5 +78,25 @@ export const skills = [
         'id': 16,
         'title': 'UI/UX',
         'url': '/assets/ui.svg'
-    }
+    },
+    {
+        'id': 17,
+        'title': 'VUE',
+        'url': '/assets/vue.svg'
+    },
+    {
+        'id': 18,
+        'title': 'VUE ROUTER',
+        'url': '/assets/vue-router.svg'
+    },
+    {
+        'id': 19,
+        'title': 'VUEX',
+        'url': '/assets/vuex.svg'
+    },
+    {
+        'id': 20,
+        'title': 'PINIA',
+        'url': '/assets/pinia.svg'
+    },
 ]
