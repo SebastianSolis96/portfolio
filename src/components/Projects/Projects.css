@@ -310,6 +310,12 @@ body .projects-screen {
     margin-bottom: 1.5rem;
     width: 100%;
 }
+
+.case_study {
+    font-weight: bold; 
+    color: rgb(167, 96, 255);
+    text-decoration: underline;
+}
 /* END: MODAL */
 
 @media only screen and (max-width: 440px) {

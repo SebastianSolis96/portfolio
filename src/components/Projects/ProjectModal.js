@@ -104,8 +104,15 @@ export const ProjectModal = () => {
         </div>
 
         <div className="info-container">
-          {projectModal?.info.map((p) => {
-            return <p key={p}>{p}</p>;
+          {projectModal?.info.map((p, index) => {
+            // return <p key={p}>{p}</p>;
+            if (index === projectModal?.info.length - 1) {
+              // Si es el último elemento, renderiza el HTML directamente
+              return <p key={index} dangerouslySetInnerHTML={{ __html: p }} />;
+            } else {
+              // Para los otros elementos, muestra el texto sin HTML
+              return <p key={index}>{p}</p>;
+            }
           })}
         </div>
       </div>
